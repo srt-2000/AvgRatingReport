@@ -35,8 +35,8 @@ python main.py --files products1.csv products2.csv --report average-rating
 
 ### Data store
 
-Files must be stored in a project folder 
-- `/data/`
+Files must be stored in a project folder
+```/data/```
 If its necessary to use another data store, you have to change directory path in utils.SerializeCSV().get_full_data_from_files()
 ```
     def get_full_data_from_files(self) -> list[dict]:
