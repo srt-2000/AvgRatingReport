@@ -144,13 +144,25 @@ The project follows a clean, modular architecture:
 - pytest (for testing)
 - ruff (for code linting and formatting)
 
-## Error Handling
+## Tech Stack
 
-The script handles common error scenarios:
-- Missing files (FileNotFoundError)
-- Invalid report types
-- Empty file lists
-- Malformed CSV data
+### Core
+- **Python 3.12+** - Programming language
+- **Poetry** - Dependency management and packaging
+
+### Libraries
+- **tabulate** - Table formatting and display
+- **pytest** - Testing framework
+- **pytest-cov** - Code coverage reporting
+- **ruff** - Fast Python linter and code formatter
+
+### Standard Libraries
+- **argparse** - Command-line interface parsing
+- **csv** - CSV file reading and parsing
+- **collections** - Data structures for grouping and aggregation
+
+### Build Tools
+- **poetry-core** - Build backend for Poetry projects
 
 ## Development
 
@@ -161,22 +173,7 @@ The script handles common error scenarios:
 - Code formatting with ruff
 - Comprehensive error handling
 
-### Code Linting and Formatting
+## 👨‍💻 Author
 
-The project uses **ruff** for code quality and formatting:
-
-```bash
-# Check code quality
-poetry run ruff check .
-
-# Format code
-poetry run ruff format .
-
-# Check and format in one command
-poetry run ruff check . --fix && poetry run ruff format .
-```
-
-### Testing Strategy
-- **Unit tests**: Individual component testing
-- **Integration tests**: End-to-end workflow testing
-- **Edge cases**: Error conditions and boundary testing
+- **Name:** srt-2000
+- **Email:** srt2000888@gmail.ru

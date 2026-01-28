@@ -12,26 +12,26 @@ from src.utils import SerializeCSV
 
 class ReportFactory:
     """Factory class for generating reports from CSV data.
-    
+
     This class provides a unified interface for creating reports by
     integrating CSV data processing and report generation components.
     """
-    
+
     @classmethod
     def get_report(cls, files: tuple[str, ...], columns: tuple[str, str]) -> str:
         """Generate a report from CSV files.
-        
+
         Processes multiple CSV files and generates a report based on
         the specified column combination. This method orchestrates the
         entire workflow from data reading to report formatting.
-        
+
         Args:
             files: Tuple of CSV file names to process
             columns: Tuple of column names for grouping and averaging
-            
+
         Returns:
             Formatted report table as string
-            
+
         Raises:
             FileNotFoundError: If any of the specified files doesn't exist
         """

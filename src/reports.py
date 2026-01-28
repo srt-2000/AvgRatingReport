@@ -13,10 +13,10 @@ from tabulate import tabulate
 
 class BrandReports:
     """Generates reports from product data.
-    
+
     This class processes product data and generates various types of reports,
     such as average rating reports grouped by brand or other criteria.
-    
+
     Args:
         full_data: List of dictionaries containing product data
         requested_columns: Tuple of column names for grouping and averaging
@@ -33,10 +33,10 @@ class BrandReports:
 
     def filter_by_report_columns(self) -> list[dict]:
         """Filter data to include only requested columns.
-        
+
         Extracts only the specified columns from the full dataset,
         creating a filtered dataset for report generation.
-        
+
         Returns:
             List of dictionaries containing only requested columns
         """
@@ -47,11 +47,11 @@ class BrandReports:
 
     def group_by_avg(self) -> list[dict]:
         """Group data and calculate average values.
-        
+
         Groups the filtered data by the left column and calculates
         average values for the right column. Results are sorted by
         average value in descending order.
-        
+
         Returns:
             List of dictionaries with grouped data and average values
         """
@@ -69,10 +69,10 @@ class BrandReports:
 
     def get_avg_rating_report(self) -> str:
         """Generate formatted report table.
-        
+
         Processes the data through filtering and grouping steps,
         then formats the result as a table using tabulate.
-        
+
         Returns:
             Formatted table string ready for display
         """
